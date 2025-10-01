@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="168.5mm" height="132.43mm" version="1.1" viewBox="0 0 168.5 132.43" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="swatch14">
+   <stop offset="0"/>
+  </linearGradient>
+  <linearGradient id="linearGradient1" x1="105.38" x2="428.7" y1="639.4" y2="639.4" gradientUnits="userSpaceOnUse" xlink:href="#swatch14"/>
+  <filter id="filter2" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">
+   <feColorMatrix result="color1" type="hueRotate" values="180"/>
+   <feColorMatrix result="fbSourceGraphic" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "/>
+   <feColorMatrix in="fbSourceGraphic" result="fbSourceGraphicAlpha" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"/>
+   <feColorMatrix in="fbSourceGraphic" result="color1" type="hueRotate" values="180"/>
+   <feColorMatrix result="fbSourceGraphic" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "/>
+   <feColorMatrix in="fbSourceGraphic" result="fbSourceGraphicAlpha" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"/>
+   <feColorMatrix in="fbSourceGraphic" result="color1" type="hueRotate" values="180"/>
+   <feColorMatrix result="color2" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "/>
+  </filter>
+ </defs>
+ <g transform="translate(-25.089 -81.495)">
+  <g transform="matrix(.89022 0 0 .89022 11.611 16.032)" filter="url(#filter2)">
+   <g transform="matrix(.30929 0 0 .30929 23.417 -61.924)" fill="url(#linearGradient1)">
+    <path class="st0" d="m302.2 653.6c-63.8-22.7-111.4-40.2-175.3-62.5-19.1-6.7-37.1-67.4 6.2-127.4 59.4 53.2 118.9 106.4 178.3 159.6 6.3 5.6 6.1 15.4-0.3 20.8-3.4 2.8-6.3 6-8.9 9.5z"/>
+    <path class="st0" d="m290.1 685.3c-50.5 5.8-84.6 9.7-135.1 15.4-13.2 2.9-56.8-38.5-48.6-97.9 64.3 18.3 128.6 36.6 192.9 54.8-5 8.2-8.1 17.7-9.2 27.7z"/>
+    <path class="st0" d="m295.7 721.3c-27.2 19-44.3 30.9-71.4 49.8-8 6.9-51.1-6.6-66.5-48.2-0.9-2.5-1.8-5.1-2.6-7.6 44.9-8.3 89.9-16.6 134.8-24.9-0.5 10.2 1.4 20.8 5.7 30.9z"/>
+    <path class="st0" d="m321.2 755.1c-6.9 18.8-13.8 37.6-20.8 56.3-1.8 7.4-32.2 4.5-57.9-16.9-4-3.4-7.9-6.9-11.5-10.6 22.5-18.9 44.9-37.7 67.4-56.6 5.2 10 12.7 19.5 22.8 27.8z"/>
+    <path class="st0" d="m333.2 635.7c2.5-3.5 6.7-9.8-8.3-22.4 0 0 25 3.1 26.1 22.1 1.5 27.6-37.1 32.9-26.1 67.3 12 37.2 80.2 56.1 20.4 112.4 0 0 23.3-31.9-15.9-64.6-42.4-35.5-29.6-77.2-23.5-87.5 11.6-19.8 20.2-17.6 27.3-27.3z"/>
+    <path class="st0" d="m372.4 779.6s2.9-18.2-8.6-31.4c-11.4-13.1-41.4-38.6-35.4-57.7 0 0 13.4 26.8 34.5 38.1 19.2 10.2 22.3 31.1 9.5 51z"/>
+    <path class="st0" d="m343.7 698.2c0.2 6.7 9 21.9 22.5 28.9s16.4 15.5 16.4 15.5c3.3-8.9-5.9-21.5-11.6-25.6-12.4-9-24.1-15.9-27.3-18.8z"/>
+    <path class="st0" d="m405.8 665.6c-12.8-6.2-11.4-8.9-16.9-8.9s-17.9 4.1-22 0c0 0 15.8 0 19.3-4.8 3.4-4.8-5.5 2.1-11-8.6s-8.3-21.7-14.4-23.7c0 0 7.3 17.2-1.2 30.3-6.1 9.5-5.8 26.9 4.5 40 0.1 0.2 0.4 0.5 0.7 0.8 0.8 1 1.7 2 2.7 3 7 7.4 15.4 18.5 22.7 21.3 16.6 6.4 15.1 9.6 24.5 5.5 9.5-4 5.1-9.8 5.1-9.8 1.7-3.4-1-13.7-1.4-12.3-1.9 7.9-29.5 6.5-29.5 6.5s-9.3-17.3 5-19.2c10.3-1.4 16.3 1.4 17 4.7s0 7.8 0 7.8 9.6-4.4 8.9-13c0 0 8.9 1 8.9-4.5 0.1-5.5-10.2-8.9-22.9-15.1z"/>
+    <path class="st0" d="m392.1 731.7c-1.1-12.1-17.2-26.8-22.3-30.5-12.7-9.3-20.6-23.4-18.2-31.7 3.9-13.3 4.1-22.4 2.3-27.8-1.8 7-8 20.2-19.4 30.4-13.3 11.9 5.7 28.7 5.7 28.7-0.9-8.8 3.3-10.4 3.3-10.4 3.5 5.6 48.6 41.3 48.6 41.3z"/>
+    <path class="st0" d="m360.3 636c1.5-9.3-3.2-24.6-23.8-29.1 0 0 23.1 21.9 21.7 37.3 0 0.1 1.8-6.1 2.1-8.2z"/>
+   </g>
+   <text x="24.208746" y="213.74554" fill="#000000" font-family="Questrial" font-size="22.578px" stroke-width="1.3229" xml:space="preserve"><tspan x="24.208746" y="213.74554" fill="#000000" font-family="Questrial" font-size="22.578px" stroke-width="1.3229">GondwanaChain</tspan></text>
+  </g>
+ </g>
+</svg>
