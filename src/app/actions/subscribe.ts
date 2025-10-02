@@ -38,7 +38,7 @@ export async function subscribeToMailchimp(formData: FormData) {
 
   if (!email || typeof email !== 'string') {
     return { error: 'Invalid email provided.' };
-  }
+  } 
 
   try {
     // listId is now guaranteed to be a 'string'
