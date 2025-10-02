@@ -9,10 +9,7 @@ import { useState } from 'react';
 export default function Subscribe() {
 
 const [status, setStatus] = useState<{ message: string; isError: boolean } | null>(null);
-  const form = useForm({
-    // FIX: Change 'validatorAdapter' to 'AsyncValidator' for the form-level adapter
-    // In recent TanStack Form versions, this is the property used for adapter configuration.
-    asyncValidator: zodValidator, 
+  const form = useForm({ 
     defaultValues: { email: '' },
     onSubmit: async ({ value }) => {
       // ... (rest of onSubmit remains the same)
