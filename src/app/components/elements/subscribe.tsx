@@ -4,7 +4,7 @@ import { useForm } from '@tanstack/react-form';
 import { zodValidator } from '@tanstack/zod-form-adapter';
 import { subscribeToMailchimp } from '@/app/actions/subscribe';
 import { newsletterFormSchema } from '@/app/lib/schemas';
-import { useState } from 'react';
+import { useState } from 'react'; 
 
 export default function Subscribe() {
 
