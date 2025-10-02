@@ -44,7 +44,7 @@ const [status, setStatus] = useState<{ message: string; isError: boolean } | nul
           name="email"
           validatorAdapter={zodValidator}
           validators={{
-            onChange: newsletterFormSchema.pick({ email: true }),
+            onChange: newsletterFormSchema.shape.email,
           }}
           children={(field) => (
 				<>
