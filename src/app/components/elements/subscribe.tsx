@@ -4,16 +4,18 @@ import { useForm } from '@tanstack/react-form';
 import { zodValidator } from '@tanstack/zod-form-adapter';
 import { subscribeToMailchimp } from '@/app/actions/subscribe';
 import { newsletterFormSchema } from '@/app/lib/schemas';
-import { useState } from 'react'; 
+import { useState } from 'react';
 
 export default function Subscribe() {
 
 const [status, setStatus] = useState<{ message: string; isError: boolean } | null>(null);
   const form = useForm({
-    // FIX: Change 'validator' to 'validatorAdapter' for the form-level adapter
-    validatorAdapter: zodValidator, 
+    // FIX: Change 'validatorAdapter' to 'AsyncValidator' for the form-level adapter
+    // In recent TanStack Form versions, this is the property used for adapter configuration.
+    asyncValidator: zodValidator, 
     defaultValues: { email: '' },
     onSubmit: async ({ value }) => {
+      // ... (rest of onSubmit remains the same)
       // Clear previous status messages
       setStatus(null);
       // Create FormData object from form values
@@ -31,8 +33,7 @@ const [status, setStatus] = useState<{ message: string; isError: boolean } | nul
       }
     },
   });
-
-// ... rest of the component
+// ... (rest of the component)
 
 	return (
 		<form 
