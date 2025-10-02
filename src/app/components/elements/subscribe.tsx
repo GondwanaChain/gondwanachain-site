@@ -8,28 +8,41 @@ import { useState } from 'react';
 
 export default function Subscribe() {
 
-const [status, setStatus] = useState<{ message: string; isError: boolean } | null>(null);
-  const form = useForm({
-    validator: zodValidator,
-    defaultValues: { email: '' },
-    onSubmit: async ({ value }) => {
-      // Clear previous status messages
-      setStatus(null);
-      // Create FormData object from form values
-      const formData = new FormData();
-      formData.append('email', value.email);
-      
-      // Call the Server Action
-      const result = await subscribeToMailchimp(formData);
+"use client";
 
-      if (result.error) {
-        setStatus({ message: result.error, isError: true });
-      } else {
-        setStatus({ message: result.success, isError: false });
-        form.reset(); // Clear the form on success
-      }
-    },
-  });
+import { useForm } from '@tanstack/react-form';
+import { zodValidator } from '@tanstack/zod-form-adapter';
+import { subscribeToMailchimp } from '@/app/actions/subscribe';
+import { newsletterFormSchema } from '@/app/lib/schemas';
+import { useState } from 'react';
+
+export default function Subscribe() {
+
+const [status, setStatus] = useState<{ message: string; isError: boolean } | null>(null);
+  const form = useForm({
+    // FIX: Change 'validator' to 'validatorAdapter' for the form-level adapter
+    validatorAdapter: zodValidator, 
+    defaultValues: { email: '' },
+    onSubmit: async ({ value }) => {
+      // Clear previous status messages
+      setStatus(null);
+      // Create FormData object from form values
+      const formData = new FormData();
+      formData.append('email', value.email);
+      
+      // Call the Server Action
+      const result = await subscribeToMailchimp(formData);
+
+      if (result.error) {
+        setStatus({ message: result.error, isError: true });
+      } else {
+        setStatus({ message: result.success, isError: false });
+        form.reset(); // Clear the form on success
+      }
+    },
+  });
+
+// ... rest of the component
 
 	return (
 		<form 
