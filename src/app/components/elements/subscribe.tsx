@@ -8,16 +8,6 @@ import { useState } from 'react';
 
 export default function Subscribe() {
 
-"use client";
-
-import { useForm } from '@tanstack/react-form';
-import { zodValidator } from '@tanstack/zod-form-adapter';
-import { subscribeToMailchimp } from '@/app/actions/subscribe';
-import { newsletterFormSchema } from '@/app/lib/schemas';
-import { useState } from 'react';
-
-export default function Subscribe() {
-
 const [status, setStatus] = useState<{ message: string; isError: boolean } | null>(null);
   const form = useForm({
     // FIX: Change 'validator' to 'validatorAdapter' for the form-level adapter
