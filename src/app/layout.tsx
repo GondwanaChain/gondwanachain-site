@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GondanaChain",
+  title: "GondwanaChain",
   description: "Trust, Transparency and Efficiency on the Chain",
 };
 
