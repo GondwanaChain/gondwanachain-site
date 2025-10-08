@@ -9,7 +9,7 @@ export default function Home() {
 		<section className="bg-base-200 flex items-center justify-center">
 			<Subscribe />
 		</section>
-		<section className="bg-base-200 flex items-center justify-between px-56 pt-16 pb-4">
+		<section className="bg-base-200 flex flex-col lg:flex-row items-center justify-center lg:justify-between px-56 pt-16 pb-4">
 		<p className="text-lg">Copyright &copy; 2025. GondwanaChain LLC. All rights reserved.</p>
 		<Socials />
 		</section>
