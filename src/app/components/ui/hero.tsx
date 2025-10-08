@@ -2,11 +2,25 @@
 
 import FaqAccordion from "../elements/faqAccordion";
 import Waitlist from "../elements/waitlist";
-
+import Waves from './waves';
 
 export default function Hero() {
   return (
    <div className="hero bg-base-200 items-center py-0 my-0">
+	
+<Waves
+  lineColor="#444466"
+  backgroundColor="#191e24" 
+  waveSpeedX={0.02}
+  waveSpeedY={0.01}
+  waveAmpX={40}
+  waveAmpY={20}
+  friction={0.9}
+  tension={0.01}
+  maxCursorMove={120}
+  xGap={12}
+  yGap={36}
+/>
   <div className="hero-content text-center items-start my-0 py-0">
     <div className="max-w-xl py-0 mx-0">
       <img height="320" width="320" className="text-center py-0 m-auto" src="/logo-dark-mode.svg" />
