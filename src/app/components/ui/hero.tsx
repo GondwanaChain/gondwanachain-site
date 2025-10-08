@@ -1,16 +1,19 @@
 "use client";
 
+import FaqAccordion from "../elements/faqAccordion";
 import Waitlist from "../elements/waitlist";
+
 
 export default function Hero() {
   return (
-   <div className="hero bg-base-200 min-h-[70vh] items-center py-0 my-0">
+   <div className="hero bg-base-200 items-center py-0 my-0">
   <div className="hero-content text-center items-start my-0 py-0">
-    <div className="max-w-md py-0 mx-0">
+    <div className="max-w-xl py-0 mx-0">
       <img height="320" width="320" className="text-center py-0 m-auto" src="/logo-dark-mode.svg" />
       <p className="py-6 text-lg font-light uppercase">
       Trust, Transparency and Efficiency on the Chain.
       </p>
+      <FaqAccordion />
       <div className="flex items-center justify-center py-6 gap-4">
         <button className="btn btn-primary rounded shadow-sm font-bold uppercase"  onClick={() => {
             const modal = document.getElementById('waitlist');
