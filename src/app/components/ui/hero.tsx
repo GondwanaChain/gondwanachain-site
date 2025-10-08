@@ -12,13 +12,18 @@ export default function Hero() {
       Trust, Transparency and Efficiency on the Chain.
       </p>
       <div className="flex items-center justify-center py-6 gap-4">
-        <button className="btn btn-primary rounded shadow-sm font-bold uppercase"  onClick={()=>document.getElementById('waitlist').showModal()}>Join the Waitlist</button>
+        <button className="btn btn-primary rounded shadow-sm font-bold uppercase"  onClick={() => {
+            const modal = document.getElementById('waitlist');
+            // Type assertion: Check if the element exists AND assert it is an HTMLDialogElement
+            if (modal instanceof HTMLDialogElement) {
+                modal.showModal();
+            }
+          }}>Join the Waitlist</button>
 	<dialog id="waitlist" className="modal">
   <div className="modal-box min-h-[80vh]">
-   <Waitlist />
     <div className="modal-action">
       <form method="dialog">
-        {/* if there is a button in form, it will close the modal */}
+          <Waitlist />
         <button className="btn">Close</button>
       </form>
     </div>
