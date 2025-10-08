@@ -27,7 +27,7 @@ businesses and organizations that only approved members can use). </div>
   <div className="collapse-title font-semibold">Why should businesses or organizations use Blockchains?</div>
   <div className="collapse-content text-sm py-2 px-2">Blockchains provide a secure, digital record of all data that a business or organization
 might use for their administration, operations, finances, etc. It reduces costs and
-paperwork and streamline operations. Furthermore, it also offers enhanced protection
+paperwork and streamlines operations. Furthermore, it also offers enhanced protection
 against fraud, and enhanced transparency, security and accountability.</div>
 </div>
 <div className="collapse collapse-arrow bg-base-100 border border-base-300">
@@ -52,7 +52,7 @@ Using Blockchain-as-a-Service (BaaS) reduces this burden.
 We set up your node for you, we install everything that's needed, and we link it to our
 node.
 Instead of doing complex operations on the Blockchain with commands, we have a
-simple user-friendly interface that can be used on computers, laptops or even your web
+simple user-friendly interface that can be used on computers, phones or even your web
 browser.</div>
 </div>
 <div className="collapse collapse-arrow bg-base-100 border border-base-300">
